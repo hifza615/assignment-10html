@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      background-color: 
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      text-align: center;
+    }
+    form {
+      width: 500px;
+      margin: auto;
+      background-color: peachpuff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    label {
+      display: inline-block;
+      width: 120px;
+      margin-bottom: 8px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+      width: 60%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-left: 10px;
+    }
+    textarea {
+      height: 60px;
+    }
+    .dob input {
+      width: 18%;
+    }
+    .mobile input {
+      width: 25%;
+    }
+    input[type="submit"] {
+      display: block;
+      margin: 10px auto;
+      padding: 8px 16px;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2><b>Student Registration Form</b></h2>
+  <form>
+    <label>Roll no. :</label>
+    <input type="text" name="rollno"><br>
+
+    <label>Student name :</label>
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Last Name"><br>
+
+    <label>Father's name :</label>
+    <input type="text"placeholder=f.name><br>
+
+   <label>Date of birth :</label>
+    <input type="date" placeholder="DD">
+    <input type="month" placeholder="Month">
+    <span>(DD-MM)</span><br>
+
+    <label>Mobile no. :</label>
+    <input type="text" value="+91" size="2" readonly>
+    
+
+    <label>Email id :</label>
+    <input type="email"><br>
+
+    <label>Password :</label>
+    <input type="password"><br>
+
+    <label>Gender :</label>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female<br>
+
+    <label>Department :</label>
+    <input type="checkbox"> pre medical
+    <input type="checkbox"> IT
+    <input type="checkbox"> pre engineering 
+    <input type="checkbox"> Civil
+    <input type="checkbox"> arts<br>
+
+    <label>Course :</label>
+    <select>
+      <option>-----Select Current Course-----</option>
+      <option>B.Tech</option>
+      <option>web and app</option>
+      <option>crochet</option>
+      <option>lcc</option>
+      <option>knitting</option>
+    </select><br>
+
+    <label>Student photo :</label>
+    <input type="file"><br>
+
+    <label>City :</label>
+    <input type="text"><br>
+
+    <label>Address :</label>
+    <textarea></textarea><br>
+
+    <input type="submit" value="Registered">
+  </form>
+</body>
+</html>
